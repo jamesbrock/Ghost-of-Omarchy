@@ -37,15 +37,6 @@ The supporting colours come from the same frame rather than from a generic ANSI
 ramp — lacquered vermillion `#C86A50`, susuki grass `#7E8C6A`, Hokkaido winter
 water `#6E9490`, mountain haze `#6B84A0`, ume plum at dusk `#A0788E`.
 
-Two rules held the whole way through:
-
-- **No neutral grey.** Nothing in the cover is neutral, so nothing here is. This
-  is why `hyprland_inactive_border` is set explicitly — left unset, Omarchy
-  falls back to a hardcoded `rgba(595959aa)`, the one colour the palette avoids.
-- **Checked, not vibed.** Every foreground-on-background pair was checked
-  against WCAG contrast, and the sixteen ANSI colours against each other in
-  CIELAB, so no two read as the same hue in a terminal at small sizes.
-
 ## Install
 
 ```bash
@@ -174,7 +165,8 @@ hyprland_inactive_border = "selection"
 
 A gradient spec is theme colour names plus an optional angle, so the focused
 window gets a 45° ginkgo-gold-to-umber edge. Most themes leave the second key
-out; see the no-neutral-grey rule above for why this one doesn't.
+out; left unset, Omarchy falls back to a hardcoded `rgba(595959aa)` — a neutral
+grey that appears nowhere else in this palette.
 
 ### Lock screen
 
