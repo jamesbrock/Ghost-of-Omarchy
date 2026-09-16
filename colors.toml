@@ -1,0 +1,46 @@
+# Ghost Of Omarchy
+# Palette sampled from the Ghost of Yotei cover art: sumi ink, Yotei snow,
+# and ginkgo gold. Every other themed config in Omarchy is generated from
+# this file via $OMARCHY_PATH/default/themed/*.tpl -- edit here, not there.
+
+mode = "dark"
+
+# Ginkgo gold: the falling leaves, and the single loudest colour on the cover.
+accent    = "#C2913F"
+selection = "#3B3123"
+muted     = "#756B5D"
+
+# Window borders. Left unset, Omarchy falls back to a hardcoded neutral grey
+# (rgba(595959aa)) for inactive windows -- the one colour this palette avoids.
+# A gradient spec is theme colour names plus an optional angle.
+hyprland_active_border   = "accent brown 45deg"
+hyprland_inactive_border = "selection"
+
+# Sumi ink. Warm-shifted black -- the cover's darks are brown-cast (#221C17),
+# never neutral grey.
+background         = "#1A1512"
+dark_background    = "#13100D"
+darker_background  = "#0D0B09"
+lighter_background = "#2A231C"
+
+# Yotei snow / washi paper. Taken straight off the mountain in the cover.
+foreground        = "#E9E3D6"
+dark_foreground   = "#8C8375"
+light_foreground  = "#D4CAB6"
+bright_foreground = "#F5F0E8"
+
+red     = "#C86A50"  # lacquered vermillion
+yellow  = "#D9A94B"  # ginkgo
+orange  = "#C87A33"  # deep amber
+green   = "#7E8C6A"  # susuki grass
+cyan    = "#6E9490"  # Hokkaido winter water
+blue    = "#6B84A0"  # mountain haze
+magenta = "#A0788E"  # ume plum at dusk
+brown   = "#937140"  # umber earth
+
+bright_red     = "#E68C73"
+bright_yellow  = "#E9C877"
+bright_green   = "#9BA884"
+bright_cyan    = "#8FB3AE"
+bright_blue    = "#8AA2BC"
+bright_magenta = "#BC94A9"
